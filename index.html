@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checklist</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+	 <script>
+	 $(document).ready(function(){
+	 	$('.Btn').mouseenter(function(){
+	 		$(this).fadeTo('fast', 0.65)
+
+	 			 	});
+	 	$('.Btn').mouseleave(function(){
+	 		$(this).fadeTo('fast', 1)
+	 	});
+	 	$('.Btn').click(function(){
+        var toAdd = $('input[name=checkListItem]').val();
+        $('.list').append('<div class="item">' + toAdd + '</div>');
+            $(document).on('click', '.item', function(){
+                $(this).remove();
+            });
+    });
+	 });
+	 </script>
+
+
+</head>
+<body>
+
+	<header>
+		
+		<h1>CheckList</h1>
+
+	</header>
+
+	<form name="checkListForm">
+			<input type="text" class="frm" name="checkListItem"/>
+		</form>
+
+	<div class="Btn"><span>Add</span></div>
+	<br/>
+	
+	<div class="list"></div>
+
+
+
+</body>
+</html>
