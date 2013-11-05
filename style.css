@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+    h1{
+    	font-family: 'Pacifico', cursive;
+    	font-size: 4em;
+    	text-align: center;
+    }
+    form{
+    	text-align: center;
+    	
+
+    }
+
+    .frm{
+    	display: inline-block;
+    	width: 30%;
+    	min-width: 10%;
+    	height: 3em;
+    	border-radius: 10px;
+    	font-family: 'Pacifico';
+    	font-size: 1em;
+
+    }
+    .Btn{
+    	display: block;
+    	font-size: 200%;
+    	width: 10%;
+    	background: #edede8;
+    	margin: 5% auto;
+    	border-radius: 10px;
+    	text-align: center;
+    	overflow: hidden;
+    	
+    }
+   
+    
+    span{
+    	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 300;
+
+        text-align: center;
+    }
+
+    .list{
+    	text-align: center;
+    	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 300;
+        font-size: 2em;
+
+    }
+@media screen and (max-width: 420px){
+h1{
+	font-size: 3em;
+}
+.frm{
+	width: 50%;
+}
+.Btn{
+	width: 50%;
+}
+}
